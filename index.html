@@ -16,8 +16,8 @@
         var turnplate = $.turnplate("#turnplate");
         turnplate.draw(
                 //["谢谢参与", "5元红包", "10元红包", "QQ会员", "优酷会员", "iphone6 plus"],//奖品名称数组
-                ["钥匙扣", "谢谢惠顾", "写id", "再送1分", "BGM", "谢谢惠顾", "答案之书", "猜性别", "再转一次", "飞吻", "再送9分"],//奖品名称数组
-                [2, 0, 1, 1, 0, 2, 2, 2, 2, 2, 2] // 奖品图标 系统自带三种图标 0 未中奖 1 红包 2 奖品；如需自定义图标，传入img DON （也可以可以用内置函数 loadImg）
+                ["谢谢惠顾", "ID合影", "再送1分", "说出hjl的三个优点", "谢谢惠顾", "答案之书", "给hjl推荐明天的晚饭", "问粉丝问题", "再送9分", "飞吻"],//奖品名称数组
+                [0, 2, 1, 2, 0, 2, 2, 2, 1, 2] // 奖品图标 系统自带三种图标 0 未中奖 1 红包 2 奖品；如需自定义图标，传入img DON （也可以可以用内置函数 loadImg）
         ).click(function () {
             var prize = Math.floor(Math.random() * 4);//抽中奖品ID 奖品名称数组下标
             turnplate.start(Math.floor(Math.random() * 4), function (prize) {
